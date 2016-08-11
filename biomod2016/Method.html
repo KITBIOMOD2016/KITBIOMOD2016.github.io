@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>BIOMOD2016 Team KIT</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 980,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/logo.png" alt="サイト名"></a></h1>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+              <ul class="gnav">
+			<li><a href="index.html">Top</a></li>
+			<li><a href="Design.html">Design</a></li>
+                        <li><a href="Method.html">Method</a></li>
+                        <li class="subnav"><a href="Experiment.html">Experiment</a>
+                               <ul>
+                                     <li><a href="http://kitbiomod2016.github.io/Experiment.html#01">Dry experiment</a></li>
+                                     <li><a href="http://kitbiomod2016.github.io/Experiment.html#02">Wet experiment</a></li>
+                                </ul>
+                            </li>
+                                 
+			             <li><a href="Member.html">Member</a></li>
+	</div><!-- /.inner -->
+</nav>
+
+<div id="contents">
+	<div id="main">
+<font size="6"><u>Material & Methods</u></font>
+<BR>
+<BR>
+<font size="5">Type of strands</font><BR>
+
+We designed strands that are shown in Figure1~6.<BR>
+    <BR>
+    <center>
+    <img src="Mimage/図1.png" width="50%" height="50%"><BR>
+    Figure.1 Makestopper1<BR>
+    </center>
+    <BR>
+    <center>
+    <img src="Mimage/図2.png" width="50%" height="50%"><BR>
+    Figure.2 Makecutter1<BR>
+    </center>
+    <BR>
+    <center>
+    <img src="Mimage/図3.png" width="50%" height="50%"><BR>
+    Figure.3 Makeoutput1<BR>
+    </center>
+    <BR>
+    <center>
+    <img src="Mimage/図4.png" width="50%" height="50%"><BR>
+    Figure.4 Makestopper2<BR>
+    </center>
+    <BR>
+    <center>
+    <img src="Mimage/図5.png" width="50%" height="50%"><BR>
+    Figure.5 Makecutter2<BR>
+    </center>
+    <BR>
+    <center>
+    <img src="Mimage/図6.png" width="50%" height="50%"><BR>
+    Figure.6 Makeoutput2<BR>
+    </center>
+    <BR>
+
+In addition to these strands, we prepared a strand is shown in Figure7 to confirm whether output is released.<BR>
+    <BR>
+    <center>
+    <img src="Mimage/図7.png" width="30%" height="30%"><BR>
+    Figure.7 Fluorescence<BR>
+    </center>
+    <BR>
+
+Also, we designed DNA sequences by visual DSD and NUPACK. <BR>
+Each DNA sequences are shown in below table1.<BR>
+
+   <BR>
+    <center>
+    Table.1 DNA sequence(main reaction units).<BR>
+    <img src="Mimage/図8.png" width="100%" height="100%"><BR>
+    </center>
+    <BR>
+ Colored portion shows toehold. <BR>
+    Each color of toehold corresponds to color of toehold in Fig.1~Fig7.<BR>
+<BR>
+In addition, Input DNAs and their DNA sequence are shown in Fig.8, Fig.9 and Table2.<BR>
+    <BR>
+    <center>
+    <img src="Mimage/図10.png" width="30%" height="30%"><BR>
+    Figure.8 Input1<BR>
+    </center>
+    <BR>
+    <center>
+    <img src="Mimage/図11.png" width="30%" height="30%"><BR>
+    Figure.9 Input2<BR>
+    </center>
+    <BR>
+    <center>
+    Table.2 DNA sequence of Input.<BR>
+    <img src="Mimage/図9.png" width="100%" height="100%"><BR>
+    </center>
+    <BR>
+
+Colored portion shows Toehold. <BR>
+Each color of Toehold corresponds to color of Toehold in Fig.8 and Fig.9.<BR>
+
+<BR>
+We experimented with these strands. 
+<BR>
+<BR>
+<font size="5">Verification experiment</font><BR><BR>
+We had a question that Makeoutput and Fluorescence may react, since they have complementary sequence TTT1 and TTT1*. <BR>
+If they react, the output is not released as we desired. <BR>
+    <BR>
+    <center>
+    <img src="Mimage/図12.png" width="50%" height="50%"><BR>
+    Figure.10 <BR>
+    </center>
+<BR>
+
+Therefore we conducted verification experiment with Makeoutput1, Fluorescence and Verification input.<BR>
+<center>
+<table>
+<TD><img src="Mimage/図13.png" width="50%" height="100%" alt="" align="center"></TD>
+<TD><img src="Mimage/図14.png" width="50%" height="100%" alt="" align="center"></TD>
+<TD><img src="Mimage/図15.png" width="75%" height="75%" alt="" align="center"></TD>
+</table>
+</center>
+<center>
+Figure.11<BR>
+</center>
+<BR>
+
+    <center>
+    <img src="Mimage/図16.png" width="50%" height="50%"><BR>
+    Figure.12 <BR>
+    </center>
+<BR>
+<BR>
+
+<strong>step 1-1　Dilution</strong><BR>
+We diluted the concentration of strands until they become desired concentration.<BR>
+This experiment performed at 20℃ in Tris-EDTA buffer supplemented with 12.5mM MgCl2.<BR>
+<BR>
+    <center>
+    Table.3<BR>
+    <img src="Mimage/図17.png" width="50%" height="50%"><BR>
+    </center>
+<BR>
+
+<BR>
+    <center>
+    <img src="Mimage/写真3.jpg" width="50%" height="50%"><BR>
+    Figure.13
+    </center>
+<BR>
+
+<strong>step 1-2 Annealing</strong><BR>
+We annealed them from 95 to 20℃(-1℃/min) after heat at 95℃ for 15 minutes.<BR>
+
+    <center>
+    <img src="Mimage/写真2.jpg" width="50%" height="50%"><BR>
+    Figure.14 Thermal Cycler (GeneAtlas 322/325)<BR>
+    </center>
+<BR>
+
+<strong>step 1-3 Fluorescent observation</strong><BR>
+We applied FRET to confirmed how much output is released by using Spectrofluoremeter(FP-8300,JASCO) and measured the fluorescence intensity. <BR>
+We used FAM as fluorescence molecule and BHQ1 as quencher molecule. The wavelength we measured is 521nm at excitation light 496nm.<BR>
+<strong>測定時間と測定間隔は今後追加</strong><BR>
+
+    <center>
+    <img src="Mimage/写真1.jpg" width="50%" height="50%"><BR>
+    Figure.15 Spectrofluorometer(FP-8300,JASCO)<BR>
+    </center>
+<BR>
+
+<strong>step 1-3-1</strong><BR>
+We measured fluorescence intensity for 30 minutes after adding Fluorescence and Makeoutput1 in a cell.<BR>
+<BR>
+<strong>step 1-3-2</strong><BR>
+We add Verification Input at 30 time after step 1-3-1, and measured fluorescence intensity.<BR>
+
+
+		</div><!-- /.staff -->
+	</div><!-- /#main -->
+
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+	<li><a href="index.html">Top</a></li>
+        <li><a href="Design.html">Design</a></li>
+        <li><a href="Method.html">Method</a></li>
+        <li><a href="Experiment.html">Experiment</a></li>
+        <li><a href="Member.html">Member</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">BIOMOD2016 KITTeam Presents</div><!-- /.copyright -->
+</footer>
+
+</body>
+</html>

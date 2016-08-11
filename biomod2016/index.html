@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<center>
+<title>BIOMOD2016 Team KIT</title>
+</center>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 980,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/logo.png" alt="サイト名"></a></h1>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+              <ul class="gnav">
+			<li><a href="index.html">Top</a></li>
+			<li><a href="Design.html">Design</a></li>
+                        <li><a href="Method.html">Method</a></li>
+                        <li class="subnav"><a href="Experiment.html">Experiment</a>
+                               <ul>
+                                     <li><a href="http://kitbiomod2016.github.io/Experiment.html#01">Dry experiment</a></li>
+                                     <li><a href="http://kitbiomod2016.github.io/Experiment.html#02">Wet experiment</a></li>
+                                </ul>
+                            </li>
+			             <li><a href="Member.html">Member</a></li>
+	</div><!-- /.inner -->
+</nav>
+
+<div class="slide">
+	<ul class="slideInner">
+		<li><a href="index.html"><img src="images/photo01.png"width="980"height="300" alt=""></a></li>
+		<li><a href="Method.html"><img src="images/photo03.png" width="980"height="300"alt=""></a></li>
+		<li><a href="Design.html"><img src="images/photo02.png"width="980"height="300" alt=""></a></li>
+                <li><a href="Experiment.html"><img src="images/photo04.png"width="980"height="300" alt=""></a></li>
+         </ul>
+</div><!-- /.slide-->
+
+<div id="contents">
+	<div id="main">
+<font size="6"><u>Abstract</u></font>
+<BR>
+<BR>
+We focused on the XOR gate as an operator for molecular programing.<BR>
+The basic operators that AND, OR, and NOTgate have already been realized in the DNA reacting system,<BR>
+so the XORgate can be realized to combine with these operators in theory.<BR>
+However, the combinational circuit is very complex, because per XORgate needs two ANDgates, an ORgates, and two NOTgate.<BR>
+For this reason, we launched the design of XORgate that has simple reacting system without the basic operators. <BR>
+The XORgate designed in this time has two advantages.<BR>
+First, It is easy to design, and the number of DNA strands on the XORgate designed is less than half one on the XOR gate of the combination circuit.<BR> 
+Second, The XORgate designed operates faster than the XORgate of the combination circuit. 
+The XORgate designed functioned alone, so the number of strand displacement reactions reduced, and we succeeded in making fast the response time.<BR>
+In this way, the XORgate designed in this time is superior to the XORgate of the combination circuit in terms of cost and performance.<BR>
+We named the XOR gate designed in this time “DNA Conductor” after?.<BR>
+
+		</div><!-- /.staff -->
+	</div><!-- /#main -->
+
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+	<li><a href="index.html">Top</a></li>
+        <li><a href="Design.html">Design</a></li>
+        <li><a href="Method.html">Method</a></li>
+        <li><a href="Experiment.html">Experiment</a></li>
+        <li><a href="Member.html">Member</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">BIOMOD2016 KITTeam Presents</div><!-- /.copyright -->
+</footer>
+
+</body>
+</html>

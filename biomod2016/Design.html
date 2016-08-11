@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>BIOMOD2016 Team KIT</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 980,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/logo.png" alt="サイト名"></a></h1>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+              <ul class="gnav">
+	<li><a href="index.html">Top</a></li>
+			<li class="subnav"><a href="Design.html">Design</a>
+                             
+                           </li>
+                        <li><a href="Method.html">Method</a></li>
+                        <li class="subnav"><a href="Experiment.html">Experiment</a>
+                               <ul>
+                                     <li><a href="http://kitbiomod2016.github.io/Experiment.html#01">Dry experiment</a></li>
+                                     <li><a href="http://kitbiomod2016.github.io/Experiment.html#02">Wet experiment</a></li>
+                                </ul>
+                            </li>
+			             <li><a href="Member.html">Member</a></li>
+	</div><!-- /.inner -->
+</nav>
+
+<div id="contents">
+        
+	<div id="main">
+<right>
+<font size="6"><u>Design</u></font>
+<BR>
+<BR>
+<font size="5">1. What is logic gate</font><BR>
+<BR>
+It is the circuit which does logic operation.<BR>
+In general, logic gate has two Inputs, and divide them into High and Low by the threshold.<BR>
+Logic circuit is used as the smallest modules which compose all digital circuit, so it is essential for recent electric products. <BR>
+In other words, when we produce some systems, we need the smallest modules, so we think need the smallest modules when we produce some systems in a DNA reaction system.<BR>
+Therefore, we need logic gate when we produce something with DNA.<BR>
+AND, OR, NOT is in logic gate. <BR>
+Their work is expressed by a truth table. <BR>
+AND, OR, and NOT are called basic logic gates.<BR>
+ In general, we can make one-step large module, XOR, NOR, and NAND by combining basic logic gates. <BR>
+Moreover, we can make larger module, flip-flop, register, and so on by combining XOR, NOR, NAND, and basic logical gates.<BR> 
+We can make a product such as a microcomputer by repeating combining modules. Because Computer is a machine for computing literally,<BR>
+it needs modules for computing. One of them is an accumulator.<BR>
+For making an accumulator, we need XOR.<BR>
+Like this, XOR is an important module, so we make XOR.<BR>
+<BR>
+<BR>
+<font size="5">2. What is XOR</font><BR>
+<BR>
+XOR works like the next truth table. <BR>
+Now the XOR which we regard a concentration of DNA as Inputs because the XOR is made in DNA reaction system. <BR>
+Only when High or Low is inputted, Output becomes High. When Inputs are High-High or Low-Low, Output becomes Low.<BR>
+<BR>
+<center>
+Table.1:XOR truth table
+</center>
+    <center>
+    <img src="images/xor1.png" width="50%" height="50%"><BR>
+    </center>
+    <BR>
+
+As mentioned in 1, basically, a big module is made by combining small modules.<BR>
+At first, we consider making XOR by combining AND, OR, NOT, but it needs many DNA strands for making and is a complex reaction system. <BR>
+A complex reaction system is bad for making something. The reason is, in DNA reaction system, a complex condition tends to occur the reaction which we don’t hope. <BR>
+Moreover, the more complex a reaction system is, the later a reaction velocity is. <BR>
+For solving the weak points, we contrived DNA Interference Detector. <BR>
+We explain DNA Interference Detector in 3.<BR>
+<BR>
+<BR>
+<font size="5">3. DNA Interference Detector</font><BR>
+<BR>
+<font size="5">3.1 What is DNA Interference Detector</font><BR>
+<BR>
+We named the XOR which we contrived DNA Interference Detector.<BR>
+DNA Interference Detector solved the weak points XOR by combinational circuit.<BR> 
+XOR combined by AND, OR, and NOT needs many DNA strands (83 strands), but Our DNA Interference Detector can performs alone the function of XOR, and it is made in a few strands (31 strands).<BR>
+Moreover, DNA Interference Detector is faster than combinational XOR about a reaction velocity. <BR>
+The difference about a reaction velocity is 15o minutes. <BR>
+<BR>
+<font size="5">3.2 Reaction path</font><BR>
+<BR>
+We designed DNA Interference Detector based on strand displacement reactions.<BR>
+This gate is composed of four DNA strand displacement reaction processes.<BR> 
+We explain each of reaction processes below.<BR>
+<BR>
+<strong>First Process:<BR></strong>
+As shown Figure 3-1, “Input1” including a ss1 TT1 s3 sequence is single-strand DNA (ssDNA) and “Makestopper1” is double-stranded DNA (dsDNA) that includes a toehold domain TT1*.<BR>
+”Input1” causes a strand displacement reaction based on TT1, yielding “Stop1”, “Next1-1” and “Waste”.  <BR>
+Similarly, “Input2” causes a strand displacement reaction with “Makestopper2” and results in “Stop2”, ”Next2-1” and “Waste”. <BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor2.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-1: Structure of First Process
+</center>
+<BR>
+<strong>Second Process:</strong><BR>
+Next, “Next1-1” produced at First Process and “Makecutter1” cause a stand displacement reaction and “Makecutter1” is replaced by “Next1-2”, ”Next1-3” and “Waste”.<BR>
+In the same way, “Makecutter2” causes a strand displacement reaction with “Next2-1” produced at First Process, creating “Next2-2”,”Next2-3”and “Waste”.<BR> 
+Figure 3-2 shows a strand displacement model of Second Process.<BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor3.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-2: Structure of Second Process
+</center>
+<BR>
+
+<strong>Third Process:</strong><BR>
+In this step, four kinds of reactions can occur. <BR>
+ We explain each of reactions below.<BR>
+<BR>
+
+①<BR>
+“Next1-3” yielded at Second Process and “Makeoutput1” cause a stand displacement reaction based on TT5 and then “Next1-2” causes a strand displacement reaction based on TT4.<BR>
+ As a result, two kinds of “Waste” and “Next1-4” are produced. <BR>
+ Similarly, “Next2-3” yielded at Second Process and “Makeoutput2” cause a stand displacement reaction based on TT2 and then “Next2-2” causes a strand displacement reaction based on TT8. <BR>
+As a result, two kinds of “Waste” and “Next2-4” are produced.  <BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor4.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-3: Structure of Third Process
+</center>
+<BR>
+
+②<BR>
+“Stop2” yielded at First Process and “Makeoutput1” cause a stand displacement reaction based on TT5 and then “Next1-2” causes a strand displacement reaction based on TT4. <BR>
+As a result, “Waste” and “Next1-6” are produced.  Similarly, “Stop1” yielded at First Process and “Makeoutput2” cause a stand displacement reaction based on TT2 and then “Next2-2” causes a strand displacement reaction based on TT8. <BR>
+As a result, “Waste” and “Next2-6” are produced.<BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor4.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-4: Structure of Third Process
+</center>
+<BR>
+
+③<BR>
+“Next1-2” yielded at Second Process and “Makeoutput1” cause a stand displacement reaction based on TT4 and then “Next1-3” causes a strand displacement reaction based on TT5.<BR> 
+As a result, two kinds of “Waste” and “Next1-4” are produced.  Similarly, “Next2-2” yielded at Second Process and “Makeoutput2” cause a stand displacement reaction based on TT8 and then “Next2-3” causes a strand displacement reaction based on TT2.<BR>
+As a result, two kinds of “Waste” and “Next2-4” are produced.<BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor4.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-5: Structure of Third Process
+</center>
+<BR>
+
+④<BR>
+“Next1-2” yielded at Second Process and “Makeoutput1” cause a stand displacement reaction based on TT4 and then “Stop2” causes a strand displacement reaction based on TT5.<BR> 
+As a result, “Nexr1-5” and “Waste” are produced.<BR>
+Similarly, “Next2-2” yielded at Second Process and “Makeoutput2” cause a stand displacement reaction based on TT8 and then “Stop1” causes a strand displacement reaction based on TT2.<BR>
+As a result, “Next2-5” and “Waste” are produced.<BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor4.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-6: Structure of Third Process
+</center>
+<BR>
+
+In ① and ②, “Makeoutput1” causes a strand displacement reaction based on TT5 and then based on TT4.<BR>
+”Makeoutput2” causes a strand displacement reaction based on TT2 and then based on TT8. <BR>
+On the other hand, in ③ and ④ “Makeoutput1” causes a strand displacement reaction based on TT4 and then based on TT5.<BR>
+“Makeoutput2” causes a strand displacement reaction based on TT8 and then based on TT2.<BR>
+As shown Figure3-4 or Figure3-6, toehold domain stTT5* of “Makeoutput1”, stTT2* of “Makeoutput2”, stTT5 of “Stop2” and stTT2 of “Stop1” consist of seven bases.<BR>
+Against it, toehold domain TT5 of “Next1-3” and TT2 of “Next2-3” consist of five bases.<BR>
+Therefore, in terms of length of toehold, a strand displacement reaction based on stTT5 is faster than that based on TT5.<BR>
+A strand displacement reaction based on stTT2 is similarly faster than that based on TT2. <BR>
+In other words, four kinds of reactions(①-④) depend on concentration of “Next1-3”, that of “Stop2”, that of “Next2-3”, and that of “Stop1”.<BR>
+When a concentration of “Next1-3” is higher than that of “Stop2”, reaction①　or reaction③ occur. <BR>
+On the other hand, if a concentration of “Stop2” is higher than that of “Next1-3”, reaction② or ④ occur.<BR>
+As the same way, when a concentration of “Next2-3” is higher than that of “Stop1”, reaction① or reaction③ occur.<BR>
+If a concentration of “Stop1” is higher than that of “Next2-3”, reaction② or ④ occur.  <BR>
+Each concentration of “Next1-3”, “Stop2”, “Next2-3” and “Stop1” depend on that of “Input1” or “Input2”, so we defined those four concentrations by concentrations of “Input1” and “input2”.<BR>
+<BR>
+
+<strong>Fourth Process:</strong><BR>
+Finally, “Next1-4” or “Next2-4” produced at Third Process and “Fluorescence” cause a stand displacement reaction and “Fluorescence” is replaced by “Fluorescence output” and “Waste”.<BR>
+We designed fluorescent molecules on 5’ end of ss3 and quencher molecules on 3’end of ss3*.<BR>
+Therefore, when “Next1-4” (or “Next2-4”) and “Fluorescence” cause a stand displacement reaction, we can observe fluorescence.<BR>
+Figure3-7 shows a strand displacement model of Fourth Process.<BR>
+
+<BR>
+<table>
+<TR>
+<TD><img src="images/xor4.png" width="400" height="350" alt="XORDNA" align="center"></TD>
+<TD><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"controls></video></TD>
+</TR>
+</table>
+
+<center>
+Figure3-7: Structure of Fourth Process
+</center>
+<BR>
+
+		</div><!-- /.staff -->
+	</div><!-- /#main -->
+
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+	<li><a href="index.html">Top</a></li>
+        <li><a href="Design.html">Design</a></li>
+        <li><a href="Method.html">Method</a></li>
+        <li><a href="Experiment.html">Experiment</a></li>
+        <li><a href="Member.html">Member</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">BIOMOD2016 KITTeam Presents</div><!-- /.copyright -->
+</footer>
+
+</body>
+</html>
