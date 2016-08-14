@@ -56,23 +56,27 @@ $(function($){
 <nav>
 	<div class="inner">
               <ul class="gnav">
-			<li><a href="index.html">Top</a></li>
-		        <li class="subnav"><a href="Design.html">Design</a>
+		 <li><a href="index.html">Top</a></li>
+	                <li class="subnav"><a href="Design.html">Design</a>
                                  <ul>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=01">What is logic gate</a></li>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=02">What is XOR</a></li>
  				     <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=03">DNA Interference Detector</a></li>
                                  </ul>
-                               </li>
-                        <li><a href="Method.html">Method</a></li>
+                               </li> <li class="subnav"><a href="Method.html">Material & Methods</a>
+                               <ul>
+                                     <li><a href="http://kitbiomod2016.github.io/biomod2016/Method.html?id=01">Type of strands</a></li>
+                                     <li><a href="http://kitbiomod2016.github.io/biomod2016/Method.html?id=02">Verification experiment</a></li>
+                                </ul>
+                            </li>
                         <li class="subnav"><a href="Experiment.html">Experiment</a>
                                <ul>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Experiment.html?id=01">Dry experiment</a></li>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Experiment.html?id=02">Wet experiment</a></li>
                                 </ul>
                             </li>
-			             <li><a href="Member.html">Member</a></li>
-               </ul>
+                       <li><a href="Member.html">Member</a></li>
+                     </ul>
 	</div><!-- /.inner -->
 </nav>
 
@@ -103,13 +107,13 @@ Further, Let Threshold concentration be defined as 50nM, where High>50nM, and Lo
 <font size="5">1.Confirmation of DNA Conductor’s Output concentration</font><BR>
 When Input1 and Input2 add DNA Conductor, we simulate Output concentration.<BR>
 We set initial Input concentration at 100nM(High) or 5nM(Low). <BR>
-Figure1.2 shows DNA Conductor’s Output when Input1-Input2 concentration is High-High, High-Low, Low-High, Low-Low respectively.<BR>
+Figure1-2 shows DNA Conductor’s Output when Input1-Input2 concentration is High-High, High-Low, Low-High, Low-Low respectively.<BR>
 <BR>
     <center>
     <img src="Dimages/Figure1.1.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure1.1: XORgate schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure1-1: XORgate schematic<BR>
 
 <BR>
     <center>
@@ -127,14 +131,14 @@ Figure1.2 shows DNA Conductor’s Output when Input1-Input2 concentration is Hig
 <TD><img src="Dimages/Figure1.2low-high.png" width="75%" height="75%" alt="" align="center"></TD>
 </TR>
 </table>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure1.2: Output of XORgate<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure1-2: Output of XORgate<BR>
 
 <font size="5">2.Introduction of Threshold gate</font><BR>
 <BR>
 Through DNA Conductor’s simulation in chapter1, Output concentration proved nearly equal to Input1 + Input2, if Input1-Input2 concentration is Low-Low.<BR>
-For this reason, connecting DNA Conductors as shown in Figure2.1, Output Concentration gradually increase and will be High despite Input1-Input2 is Low-Low(Figure2.2). <BR>
+For this reason, connecting DNA Conductors as shown in Figure2-1, Output Concentration gradually increase and will be High despite Input1-Input2 is Low-Low(Figure2-2). <BR>
 Solving this problem, we attach Threshold gate to DNA Conductor.<BR>
-Figure2.4 shows Threshold gate working which divide Input concentration High or Low as a border Threshold concentration.<BR>
+Figure2-4 shows Threshold gate working which divide Input concentration High or Low as a border Threshold concentration.<BR>
 If Input concentration is Low after passing Threshold gate, the concentration will be 0.5nM. For this reason, Output of DNA Conductor which attach Threshold gate will be never high, if Input1-Input2 is Low-Low.<BR>
 <BR>
 
@@ -143,28 +147,28 @@ If Input concentration is Low after passing Threshold gate, the concentration wi
     <img src="Dimages/Figure2.1.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　Figure2.1:Connecting XORgate schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　Figure2-1:Connecting XORgate schematic<BR>
 
 <BR>
     <center>
     <img src="Dimages/Figure2.2.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　 　　Figure2.2:Simulation of Figure2.1<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　 　　Figure2-2:Simulation of Figure2-1<BR>
 
 <BR>
     <center>
     <img src="Dimages/Figure2.3.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　Figure2.3:Introducing Thresholdgate schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　Figure2-3:Introducing Thresholdgate schematic<BR>
 
 <BR>
     <center>
     <img src="Dimages/Figure2.4.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure2.4:Thresholdgate function<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure2-4:Thresholdgate function<BR>
 
 <BR>
     <center>
@@ -182,28 +186,28 @@ If Input concentration is Low after passing Threshold gate, the concentration wi
 <TD><img src="Dimages/Figure2.5 low-high.png" width="75%" height="75%" alt="" align="center"></TD>
 </TR>
 </table>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure2.5: Output of XORgate<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure2-5: Output of XORgate<BR>
 <BR>
 <font size="5">3. Comparison of DNA Conductor with Combinational xor circuit</font><BR>
-As shown in Figure3.1, xor circuit can be designed to combine AND gate, OR gate, and NOTgate.<BR>
+As shown in Figure3-1, xor circuit can be designed to combine AND gate, OR gate, and NOTgate.<BR>
 <BR>
     <center>
     <img src="Dimages/Figure3.1.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　Figure3.1:Combinational xor circuit schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　Figure3-1:Combinational xor circuit schematic<BR>
 <BR>
 The realization of combinational XOR gate is difficult.<BR>
 The reason is that complex circuits in DNA reaction system tend to cause the reaction which we don’t hope to cause.<BR>
 We compare simulation between DNA Interference Detector and combinational XOR to conclude which is simpler design.<BR>
 <BR>
-　　　　　　　　　　　　　　　　　　　　　　　　　Table3.2:Each device of complexity index
+　　　　　　　　　　　　　　　　　　　　　　　　　Table3-1:Each device of complexity index
     <center>
     <img src="Dimages/Table3.2.png" width="50%" height="50%"><BR>
     </center>
 
 <BR>
-Table3.2 shows the design using DNA interference detection is simpler because each number is lower. <BR>
+Table3-1 shows the design using DNA interference detection is simpler because each number is lower. <BR>
 Next, we compare simulation.<BR>
 <BR>
 
@@ -211,7 +215,7 @@ Next, we compare simulation.<BR>
     <img src="Dimages/Figure3.3.png" width="50%" height="50%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure3.3 Each simulation
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure3-3 Each simulation
 <BR>
 <BR>
 
@@ -219,7 +223,7 @@ Next, we compare simulation.<BR>
     <img src="Dimages/Figure3.4.png" width="50%" height="50%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　Figure3.4: Expansion of figure1, it change timescale to minutes
+　　　　　　　　　　　　　　　　　　　　Figure3-4: Expansion of figure1, it change timescale to minutes
 <BR>
 <BR>
 
@@ -232,6 +236,7 @@ If we use the combinational circuit stopping 150 minutes is likely to be a criti
 <BR>
 <BR>
 <div id="02"><u><font size="6">Wet Experiment</font></u></div><BR>
+<font size="5">4.Wet Experiment</font><BR>
 <BR>
 <strong>step.1 Dilute</strong><BR>
 We diluted the concentration of each strands until they become desired concentration like below table.<BR>
@@ -239,7 +244,7 @@ This experiment performed at 20℃ in Tris-EDTA buffer supplemented with 12.5mM 
 
 <BR>
     <center>
-    Table.1<BR>
+    Table.4-1<BR>
     <img src="Mimage/図18.png" width="50%" height="50%"><BR>
     </center>
 <BR>
@@ -251,29 +256,27 @@ Third,(3) Input1 is low and Input2 is high.<BR>
 At last, (4) Input1 and Input2 are high.<BR>
 We show each initial concentration of input for (1), (2), (3) and (4) as below tables.<BR>
 We set to Input concentration is 100nM when input is high, and 5nM when input is low.<BR>
-
+<BR>
     <center>
-    Table.2 (1) Input1 and Input2 are low<BR>
+    Table4-2 (1) Input1 and Input2 are low<BR>
     <img src="Mimage/図19.png" width="50%" height="50%"><BR>
     </center>
 <BR>
 
     <center>
-    Table.3 (2) Input1 is high and Input2 is low<BR>
+    Table4-3 (2) Input1 is high and Input2 is low<BR>
     <img src="Mimage/図20.png" width="50%" height="50%"><BR>
     </center>
 <BR>
     <center>
-    Table.4 (3) Input1 is low and Input2 is high<BR>
+    Table4-4 (3) Input1 is low and Input2 is high<BR>
     <img src="Mimage/図21.png" width="50%" height="50%"><BR>
     </center>
 <BR>
     <center>
-    Table.5 (4) Input1 and Input2 are high<BR>
+    Table4-5 (4) Input1 and Input2 are high<BR>
     <img src="Mimage/図22.png" width="50%" height="50%"><BR>
     </center>
-<BR>
-<BR>
 <BR>
 
 <strong>step 2 Annealing</strong><BR>
@@ -285,26 +288,26 @@ We measured the fluorescence intensity of output by using Spectrofluoremeter(FP-
 Measurement time of (1)~(4) is 36000 seconds then time interval is 5 minutes.<BR>
 <BR>
 
-<font size="5">Output confirmation</font><BR>
+<font size="5">5.Output confirmation</font><BR>
 We applied FRET(Fluorescence resonance energy transfer) to confirm how much output is released.<BR>
 Before the Output reacts to Fluorescence, the FAM doesn’t glow, since fluorescence of FAM is absorbed by BHQ1.<BR>
 When the Output reacts Fluorescence, fluorescence of FAM glows, since distance of FAM and BHQ1 step away.<BR>
 
     <center>
     <img src="Mimage/図23.png" width="50%" height="50%"><BR>
-    figure.3.5 
+    figure5-1 
     </center>
 <BR>
 
 
-<font size ="6"><u>Experimental result</u></font><BR>
+<font size ="6"><u>6.Experimental result</u></font><BR>
 <BR>
 <font size ="5">Verification Experiment</font><BR>
 Measurement result when we add Verification Input after 30 minutes passes since add Fluorescence and Makeoutput in a cell is shown below.<BR>
 
     <center>
     <img src="Mimage/実験1.png" width="50%" height="50%"><BR>
-    figure.3.6
+    figure6-1
     </center>
 <BR>
 
@@ -318,22 +321,22 @@ Measurement result of Output when inputs are (1), (2), (3) and (4) are shown bel
 
     <center>
     <img src="Mimage/実験2.png" width="50%" height="50%"><BR>
-    figure.3.7 (1) InputA and InputB are low
+    figure6-2 (1) InputA and InputB are low
     </center>
 <BR>
     <center>
     <img src="Mimage/実験3.png" width="50%" height="50%"><BR>
-    figure.3.8 (2) InputA is high and InputB is low
+    figure6-3 (2) InputA is high and InputB is low
     </center>
 <BR>
     <center>
     <img src="Mimage/実験4.png" width="50%" height="50%"><BR>
-    figure.3.9 (3) InputA is low and InputB is high
+    figure6-4 (3) InputA is low and InputB is high
     </center>
 <BR>
     <center>
     <img src="Mimage/実験5.png" width="50%" height="50%"><BR>
-    figure.3.10 (4) InputA and InputB are high
+    figure6-5 (4) InputA and InputB are high
     </center>
 <BR>
 <BR>
@@ -342,7 +345,7 @@ Put the data from (1)~(4) together is shown below.<BR>
 
     <center>
     <img src="Mimage/実験6.png" width="50%" height="50%"><BR>
-    figure.3.11 (1)~(4) together
+    figure6-6 (1)~(4) together
     </center>
 <BR>
 

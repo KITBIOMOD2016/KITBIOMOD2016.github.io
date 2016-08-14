@@ -56,22 +56,26 @@ $(function($){
 <nav>
 	<div class="inner">
             <ul class="gnav">
-	                <li><a href="index.html">Top</a></li>
+                       <li><a href="index.html">Top</a></li>
 	                <li class="subnav"><a href="Design.html">Design</a>
                                  <ul>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=01">What is logic gate</a></li>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=02">What is XOR</a></li>
  				     <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=03">DNA Interference Detector</a></li>
                                  </ul>
-                               </li>
-                        <li><a href="Method.html">Method</a></li>
+                               </li> <li class="subnav"><a href="Method.html">Material & Methods</a>
+                               <ul>
+                                     <li><a href="http://kitbiomod2016.github.io/biomod2016/Method.html?id=01">Type of strands</a></li>
+                                     <li><a href="http://kitbiomod2016.github.io/biomod2016/Method.html?id=02">Verification experiment</a></li>
+                                </ul>
+                            </li>
                         <li class="subnav"><a href="Experiment.html">Experiment</a>
                                <ul>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Experiment.html?id=01">Dry experiment</a></li>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Experiment.html?id=02">Wet experiment</a></li>
                                 </ul>
                             </li>
-			             <li><a href="Member.html">Member</a></li>
+                       <li><a href="Member.html">Member</a></li>
               </ul>
 	</div><!-- /.inner -->
 </nav>
@@ -81,15 +85,15 @@ $(function($){
 	<div id="main">
 <table>
 <TR>
-<TD><a href="?id=01"><img src="images/Dlink1.png" width="70%" height="70%" alt="1_D" ></a><BR>
+<TD><a href="?id=01"><img src="images/Dlink1.png" width="80%" height="60%" alt="1_D" ></a><BR>
 <center>
 Jump to What is logic gate
 </center>
 </TD>
-<TD><a href="?id=02"><img src="images/Dlink2.png" width="70%" height="70%" alt="2_D"></a><BR>
+<TD><a href="?id=02"><img src="images/Dlink2.png" width="80%" height="60%" alt="2_D"></a><BR>
 <center>
 Jump to What is XOR
-<TD><a href="?id=03"><img src="images/Dlink3.png" width="70%" height="70%" alt="3_D"></a><BR>
+<TD><a href="?id=03"><img src="images/Dlink3.png" width="80%" height="60%" alt="3_D"></a><BR>
 <center>
 Jump to DNA Interference Detector
 </center>
@@ -119,13 +123,12 @@ Like this, XOR is an important module, so we make XOR.<BR>
 <BR>
 <BR>
 <div id="02"><font size="5">2. What is XOR</font></div><BR>
-<BR>
 XOR works like the next truth table. <BR>
 Now the XOR which we regard a concentration of DNA as Inputs because the XOR is made in DNA reaction system. <BR>
 Only when High or Low is inputted, Output becomes High. When Inputs are High-High or Low-Low, Output becomes Low.<BR>
 <BR>
 <center>
-Table.1:XOR truth table
+Table1-1:XOR truth table
 </center>
     <center>
     <img src="images/xor1.png" width="50%" height="50%"><BR>
@@ -143,7 +146,6 @@ We explain DNA Interference Detector in 3.<BR>
 <div id="03"><font size="5">3. DNA Interference Detector</font></div><BR>
 <BR>
 <font size="5">3.1 What is DNA Interference Detector</font><BR>
-<BR>
 We named the XOR which we contrived DNA Interference Detector.<BR>
 DNA Interference Detector solved the weak points XOR by combinational circuit.<BR> 
 XOR combined by AND, OR, and NOT needs many DNA strands (83 strands), but Our DNA Interference Detector can performs alone the function of XOR, and it is made in a few strands (31 strands).<BR>
@@ -151,7 +153,6 @@ Moreover, DNA Interference Detector is faster than combinational XOR about a rea
 The difference about a reaction velocity is 15o minutes. <BR>
 <BR>
 <font size="5">3.2 Reaction path</font><BR>
-<BR>
 We designed DNA Interference Detector based on strand displacement reactions.<BR>
 This gate is composed of four DNA strand displacement reaction processes.<BR> 
 We explain each of reaction processes below.<BR>
@@ -164,8 +165,8 @@ Similarly, “Input2” causes a strand displacement reaction with “Makestoppe
 <BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-1.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-1.png" width="130%" height="60%" alt="XORDNA"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
 
@@ -178,11 +179,10 @@ Next, “Next1-1” produced at First Process and “Makecutter1” cause a stan
 In the same way, “Makecutter2” causes a strand displacement reaction with “Next2-1” produced at First Process, creating “Next2-2”,”Next2-3”and “Waste”.<BR> 
 Figure 3-2 shows a strand displacement model of Second Process.<BR>
 
-<BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-2.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-2.png" width="130%" height="60%" alt="XORDNA" align="center"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
 
@@ -202,13 +202,13 @@ In this step, four kinds of reactions can occur. <BR>
  Similarly, “Next2-3” yielded at Second Process and “Makeoutput2” cause a stand displacement reaction based on TT2 and then “Next2-2” causes a strand displacement reaction based on TT8. <BR>
 As a result, two kinds of “Waste” and “Next2-4” are produced.  <BR>
 
-<BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-3.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-3.png" width="130%" height="60%" alt="XORDNA" align="center"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
+
 
 <center>
 Figure3-3: Structure of Third Process
@@ -220,11 +220,10 @@ Figure3-3: Structure of Third Process
 As a result, “Waste” and “Next1-6” are produced.  Similarly, “Stop1” yielded at First Process and “Makeoutput2” cause a stand displacement reaction based on TT2 and then “Next2-2” causes a strand displacement reaction based on TT8. <BR>
 As a result, “Waste” and “Next2-6” are produced.<BR>
 
-<BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-4.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-4.png" width="130%" height="60%" alt="XORDNA" align="center"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
 
@@ -238,11 +237,10 @@ Figure3-4: Structure of Third Process
 As a result, two kinds of “Waste” and “Next1-4” are produced.  Similarly, “Next2-2” yielded at Second Process and “Makeoutput2” cause a stand displacement reaction based on TT8 and then “Next2-3” causes a strand displacement reaction based on TT2.<BR>
 As a result, two kinds of “Waste” and “Next2-4” are produced.<BR>
 
-<BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-5.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-5.png" width="130%" height="60%" alt="XORDNA" align="center"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
 <center>
@@ -256,11 +254,10 @@ As a result, “Nexr1-5” and “Waste” are produced.<BR>
 Similarly, “Next2-2” yielded at Second Process and “Makeoutput2” cause a stand displacement reaction based on TT8 and then “Stop1” causes a strand displacement reaction based on TT2.<BR>
 As a result, “Next2-5” and “Waste” are produced.<BR>
 
-<BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-6.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-6.png" width="130%" height="60%" alt="XORDNA" align="center"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
 
@@ -291,11 +288,10 @@ We designed fluorescent molecules on 5’ end of ss3 and quencher molecules on 3
 Therefore, when “Next1-4” (or “Next2-4”) and “Fluorescence” cause a stand displacement reaction, we can observe fluorescence.<BR>
 Figure3-7 shows a strand displacement model of Fourth Process.<BR>
 
-<BR>
 <table style="border-style: none;" border="1">
 <TR>
-<td style="border-style: none;"><img src="Deimages/fig3-7.png" width="400" height="350" alt="XORDNA" align="center"></TD>
-<td style="border-style: none;"><video src="images/kusari.mp4" width="400" height="350" alt="XORDNA" align="center"autoplay loop></video></TD>
+<td style="border-style: none;"><img src="Deimages/fig3-7.png" width="130%" height="60%" alt="XORDNA" align="center"></TD>
+<td style="border-style: none;"><video src="Deimages/fig3-3.mp4" width="40%" height="40%" alt="XORDNA" align="center"autoplay loop></video></TD>
 </TR>
 </table>
 
