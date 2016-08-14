@@ -57,12 +57,12 @@ $(function($){
 	<div class="inner">
               <ul class="gnav">
 			<li><a href="index.html">Top</a></li>
-			<li class="subnav"><a href="Design.html">Design</a>
-　 				<ul>
+		        <li class="subnav"><a href="Design.html">Design</a>
+                                 <ul>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Desigh.html#01">What is logic gate</a></li>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Desigh.html#02">What is XOR</a></li>
  				     <li><a href="http://kitbiomod2016.github.io/biomod2016/Desigh.html#03">DNA Interference Detector</a></li>
-                                </ul>
+                                 </ul>
                                </li>
                         <li><a href="Method.html">Method</a></li>
                         <li class="subnav"><a href="Experiment.html">Experiment</a>
@@ -85,12 +85,12 @@ $(function($){
 
 <table>
 <TR>
-<TD><a href="#01"><img src="images/link01.png" width="80%" height="50%" alt="D_E" ></a><BR>
+<TD><a href="?id=01"><img src="images/link01.png" width="80%" height="50%" alt="D_E" ></a><BR>
 <center>
-<a name="01">Dry Experiment</a>
+Dry Experiment
 </center>
 </TD>
-<TD><a href="#02"><img src="images/link02.png" width="80%" height="50%" alt="W_E"></a><BR>
+<TD><a href="?id=02"><img src="images/link02.png" width="80%" height="50%" alt="W_E"></a><BR>
 <center>
 Wet Experiment
 </center>
@@ -99,7 +99,7 @@ Wet Experiment
 </table>
 <BR>
 <BR>
-<u><font size="6">Dry Experiment</font></u>
+<div id="01"><u><font size="6">Dry Experiment</font></u></div>
 <BR>
 We simulate Output concentration of DNA Conductor by numerical software (Matlab) and describe a performance and a refinement in this page.<BR>
 Further, Let Threshold concentration be defined as 50nM, where High>50nM, and Low<50nM.<BR>
@@ -232,11 +232,11 @@ These graphs are High-Low Output. <BR>
 Because Low-Low Output’s concentration is less than 10^(-8),<BR>
 We can recognize Output is low when graph’s value is comparatively low.<BR>
 So, we set the Threshold as 50nM. Therefore, the design using DNA Conductor is faster than the other in the time when we recognize the Output is High.<BR>
-<a name="02">Because Threshold is 50nM, from figure2, it is 150 minutes that the difference of time when Output becomes high.</a><BR>
+Because Threshold is 50nM, from figure2, it is 150 minutes that the difference of time when Output becomes high.<BR>
 If we use the combinational circuit stopping 150 minutes is likely to be a critical weak point.  Our DNA conductor solved the weak point.<BR>
 <BR>
 <BR>
-<u><font size="6">Wet Experiment</font></u><BR>
+<div id="02"><u><font size="6">Wet Experiment</font></u></div><BR>
 <BR>
 <strong>step.1 Dilute</strong><BR>
 We diluted the concentration of each strands until they become desired concentration like below table.<BR>
