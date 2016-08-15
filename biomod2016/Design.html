@@ -61,7 +61,7 @@ $(function($){
                                  <ul>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=01">What is logic gate</a></li>
                                      <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=02">What is XOR</a></li>
- 				     <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=03">DNA Interference Detector</a></li>
+ 				     <li><a href="http://kitbiomod2016.github.io/biomod2016/Design.html?id=03">DNA Interference Canceller</a></li>
                                  </ul>
                                </li> <li class="subnav"><a href="Method.html">Material & Methods</a>
                                <ul>
@@ -95,7 +95,7 @@ Jump to What is logic gate
 Jump to What is XOR
 <TD><a href="?id=03"><img src="images/Dlink3.png" width="80%" height="60%" alt="3_D"></a><BR>
 <center>
-Jump to DNA Interference Detector
+Jump to DNA Interference Canceller
 </center>
 </TD>
 </TR>
@@ -139,21 +139,21 @@ As mentioned in 1, basically, a big module is made by combining small modules.<B
 At first, we consider making XOR by combining AND, OR, NOT, but it needs many DNA strands for making and is a complex reaction system. <BR>
 A complex reaction system is bad for making something. The reason is, in DNA reaction system, a complex condition tends to occur the reaction which we don’t hope. <BR>
 Moreover, the more complex a reaction system is, the later a reaction velocity is. <BR>
-For solving the weak points, we contrived DNA Interference Detector.<BR>
-We explain DNA Interference Detector in 3.<BR>
+For solving the weak points, we contrived DNA Interference Canceller.<BR>
+We explain DNA Interference Canceller in 3.<BR>
 <BR>
 <BR>
-<div id="03"><font size="5">3. DNA Interference Detector</font></div><BR>
+<div id="03"><font size="5">3. DNA Interference Canceller</font></div><BR>
 <BR>
-<font size="5">3.1 What is DNA Interference Detector</font><BR>
-We named the XOR which we contrived DNA Interference Detector.<BR>
-DNA Interference Detector solved the weak points XOR by combinational circuit.<BR> 
-XOR combined by AND, OR, and NOT needs many DNA strands (83 strands), but Our DNA Interference Detector can performs alone the function of XOR, and it is made in a few strands (31 strands).<BR>
-Moreover, DNA Interference Detector is faster than combinational XOR about a reaction velocity. <BR>
-The difference about a reaction velocity is 15o minutes. <BR>
+<font size="5">3.1 What is DNA Interference Canceller</font><BR>
+We named the XOR which we contrived DNA Interference Canceller.<BR>
+DNA Interference Canceller solved the weak points XOR by combinational circuit.<BR> 
+XOR combined by AND, OR, and NOT needs many DNA strands (83 strands), but Our DNA Interference Canceller can performs alone the function of XOR, and it is made in a few strands (31 strands).<BR>
+Moreover, DNA Interference Canceller is faster than combinational XOR about a reaction velocity. <BR>
+The difference about a reaction velocity is 150 minutes. <BR>
 <BR>
 <font size="5">3.2 Reaction path</font><BR>
-We designed DNA Interference Detector based on strand displacement reactions.<BR>
+We designed DNA Interference Canceller based on strand displacement reactions.<BR>
 This gate is composed of four DNA strand displacement reaction processes.<BR> 
 We explain each of reaction processes below.<BR>
 <BR>
@@ -178,7 +178,7 @@ Figure 3-2 shows a strand displacement model of Second Process.<BR>
 
 <BR>
 <img src="Deimages/fig3-2.png" width="60%" height="45%" alt="XORDNA">
-<video src="Deimages/fig3-3.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
+<video src="Deimages/fig3-2.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
 
 <center>
 Figure3-2: Structure of Second Process
@@ -213,7 +213,7 @@ As a result, “Waste” and “Next2-6” are produced.<BR>
 
 <BR>
 <img src="Deimages/fig3-4.png" width="60%" height="45%" alt="XORDNA">
-<video src="Deimages/fig3-3.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
+<video src="Deimages/fig3-4.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
 
 <center>
 Figure3-4: Structure of Third Process
@@ -227,7 +227,7 @@ As a result, two kinds of “Waste” and “Next2-4” are produced.<BR>
 
 <BR>
 <img src="Deimages/fig3-5.png" width="60%" height="45%" alt="XORDNA">
-<video src="Deimages/fig3-3.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
+<video src="Deimages/fig3-5.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
 
 <center>
 Figure3-5: Structure of Third Process
@@ -242,7 +242,7 @@ As a result, “Next2-5” and “Waste” are produced.<BR>
 
 <BR>
 <img src="Deimages/fig3-6.png" width="60%" height="45%" alt="XORDNA">
-<video src="Deimages/fig3-3.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
+<video src="Deimages/fig3-6.mp4" width="30%" height="30%" alt="XORDNA" align="center"autoplay loop></video>
 
 <center>
 Figure3-6: Structure of Third Process
@@ -254,7 +254,7 @@ In ① and ②, “Makeoutput1” causes a strand displacement reaction based on
 On the other hand, in ③ and ④ “Makeoutput1” causes a strand displacement reaction based on TT4 and then based on TT5.<BR>
 “Makeoutput2” causes a strand displacement reaction based on TT8 and then based on TT2.<BR>
 As shown Figure3-4 or Figure3-6, toehold domain stTT5* of “Makeoutput1”, stTT2* of “Makeoutput2”, stTT5 of “Stop2” and stTT2 of “Stop1” consist of seven bases.<BR>
-Against it, toehold domain TT5 of “Next1-3” and TT2 of “Next2-3” consist of five bases.<BR>
+Against it, toehold domain TT5 of “Next1-3” and TT2 of “Next2-3” consist of four bases.<BR>
 Therefore, in terms of length of toehold, a strand displacement reaction based on stTT5 is faster than that based on TT5.<BR>
 A strand displacement reaction based on stTT2 is similarly faster than that based on TT2. <BR>
 In other words, four kinds of reactions(①-④) depend on concentration of “Next1-3”, that of “Stop2”, that of “Next2-3”, and that of “Stop1”.<BR>
