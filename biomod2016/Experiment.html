@@ -99,12 +99,12 @@ Jump to Wet Experiment
 <BR>
 <BR>
 <div id="01"><u><font size="6">Dry Experiment</font></u></div>
-We simulated the output concentration of the DNA Interference Canceller using numerical software (Matlab); the performance and refinement are described herein. The threshold concentration was defined as 50 nM, where “High” > 50 nM and “Low” < 50 nM. We conducted four types of simulations: Pattern1, Input1 and Input2 were “Low”; Pattern2, Input1 was “High” and Input2 was “Low”; Pattern3, Input1 was “Low” and Input2 was “High”; and Pattern4, Input1 and Input2 were “High”. In addition, we set the initial input concentration at 100 nM (High) or 5 nM (Low).<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We simulated the output concentration of the DNA Interference Canceller using numerical software (Matlab); the performance and refinement are described herein. The threshold concentration was defined as 50 nM, where “High” > 50 nM and “Low” < 50 nM. We conducted four types of simulations: Pattern1, Input1 and Input2 were “Low”; Pattern2, Input1 was “High” and Input2 was “Low”; Pattern3, Input1 was “Low” and Input2 was “High”; and Pattern4, Input1 and Input2 were “High”. In addition, we set the initial input concentration at 100 nM (High) or 5 nM (Low).<BR>
 <BR>
 <BR>
 
 <font size="5">1.Confirmation of the output concentration for the DNA Interference Canceller</font><BR>
-When Input1 and Input2 were added to the DNA Interference Canceller, we simulated the output concentration. Figure 1 shows XORgate schematic and Figure 2 shows the four simulation patterns.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When Input1 and Input2 were added to the DNA Interference Canceller, we simulated the output concentration. Figure 1 shows XORgate schematic and Figure 2 shows the four simulation patterns.<BR>
 <BR>
     <center>
     <img src="Dimages/Figure1.png" width="30%" height="30%"><BR>
@@ -147,7 +147,7 @@ When Input1 and Input2 were added to the DNA Interference Canceller, we simulate
 <BR>
 
 <font size="5">2.Introduction of the threshold gate</font><BR>
-Through simulation with the DNA Interference Canceller, as described in section 1, when Input1 was “Low” and Input2 was “Low”, the output concentration was nearly equal to Input1 plus Input2. For this reason, connecting the DNA Interference Canceller as shown in Figure 3, the output concentration gradually increased and would be “High”, despite that both inputs were “Low” (Figure 4). In order to overcome this problem, we attached a threshold gate to the DNA Interference Canceller(Figure 5). Figure 6 shows the function of the threshold gate, which divided the input concentration into “High” or “Low” as a border threshold concentration. If the input concentration was “Low” after passing the threshold gate, the output concentration would be 0.5 nM. For this reason, the output of the DNA Interference Canceller attached to the threshold gate would not ever “High”, when both Input1 and Input2 were “Low”. Figure 7 shows the simulation of the DNA Interference Canceller with the threshold gate. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through simulation with the DNA Interference Canceller, as described in section 1, when Input1 was “Low” and Input2 was “Low”, the output concentration was nearly equal to Input1 plus Input2. For this reason, connecting the DNA Interference Canceller as shown in Figure 3, the output concentration gradually increased and would be “High”, despite that both inputs were “Low” (Figure 4). In order to overcome this problem, we attached a threshold gate to the DNA Interference Canceller(Figure 5). Figure 6 shows the function of the threshold gate, which divided the input concentration into “High” or “Low” as a border threshold concentration. If the input concentration was “Low” after passing the threshold gate, the output concentration would be 0.5 nM. For this reason, the output of the DNA Interference Canceller attached to the threshold gate would not ever “High”, when both Input1 and Input2 were “Low”. Figure 7 shows the simulation of the DNA Interference Canceller with the threshold gate. <BR>
 <BR>
 
 <BR>
@@ -213,14 +213,14 @@ Through simulation with the DNA Interference Canceller, as described in section 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure 7: Output of XORgate<BR>
 <BR>
 <font size="5">3.Comparison of the DNA Interference Canceller with the combinational XOR circuit</font><BR>
-As shown in Figure 8, the XOR circuit can be designed to combine the ANDgate, ORgate, and NOTgate.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As shown in Figure 8, the XOR circuit can be designed to combine the ANDgate, ORgate, and NOTgate.  
 <BR>
     <center>
     <img src="Dimages/Figure8.png" width="30%" height="30%"><BR>
     </center>
 
 　　　　　　　　　　　　　　　　　　　　　　　　Figure 8: Combinational XOR circuit schematic<BR>
-Realization of the combinational XORgate is difficult because the complex circuits in the DNA reaction system tend to cause unwanted reactions. We compare simulations between the DNA Interference Canceller and combinational XOR to determine which exhibited a simpler design.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realization of the combinational XORgate is difficult because the complex circuits in the DNA reaction system tend to cause unwanted reactions. We compare simulations between the DNA Interference Canceller and combinational XOR to determine which exhibited a simpler design.<BR>
 <BR>
 　　　　　　　　　　　　　　　　　　　　　　　　　Table 1:Complexity index of each device
     <center>
@@ -228,7 +228,7 @@ Realization of the combinational XORgate is difficult because the complex circui
     </center>
 
 <BR>
-Table 1 shows that the design using the DNA Interference Canceller was simpler because each number was lower. Thus, we then compared simulations using both approaches.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table 1 shows that the design using the DNA Interference Canceller was simpler because each number was lower. Thus, we then compared simulations using both approaches.<BR>
 <BR>
 
     <center>
@@ -246,29 +246,29 @@ Figure 10: Expansion of Figure 9, with the time scale changed to minutes
 
 <BR>
 <BR>
-The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10-8 M. 
-We found that the output was “Low” when the graph’s value was comparatively low. Therefore, we set the threshold as 50 nM. With this threshold, the design using the DNA Interference Canceller was faster than the other design when the output was “High”. Because the threshold concentration was 50 nM, as shown in Figure 10, the output became “High” at 150 min. If we used the combinational circuit, 150 min may be a critical weak point. Our DNA Interference Canceller overcame this limitation.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10-8 M. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We found that the output was “Low” when the graph’s value was comparatively low. Therefore, we set the threshold as 50 nM. With this threshold, the design using the DNA Interference Canceller was faster than the other design when the output was “High”. Because the threshold concentration was 50 nM, as shown in Figure 10, the output became “High” at 150 min. If we used the combinational circuit, 150 min may be a critical weak point. Our DNA Interference Canceller overcame this limitation.
 <BR>
 <BR>
 
 <div id="02"><u><font size="6">Wet Experiment results</font></u></div><BR>
 
 <font size ="5">4.Verification Experiment</font><BR>
-The measurement result after adding the Verification Input at 30 min passed the detection threshold after adding Fluorescence and Makeoutput1 in the cell, as shown in Figure4-1. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The measurement result after adding the Verification Input at 30 min passed the detection threshold after adding Fluorescence and Makeoutput1 in the cell, as shown in Figure4-1. <BR>
 
     <center>
     <img src="Mimage/実験1.png" width="50%" height="50%"><BR>
     Figure4-1 Verification Experiment
     </center>
 <BR>
-We found that Makeoutput1 and Fluorescence did not react because the fluorescence intensity was almost unchanged before adding the Verification Input. After adding the Verification Input, the fluorescence intensity changed. Therefore, we progressed to the main experiment.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We found that Makeoutput1 and Fluorescence did not react because the fluorescence intensity was almost unchanged before adding the Verification Input. After adding the Verification Input, the fluorescence intensity changed. Therefore, we progressed to the main experiment.
 <BR>
 
 <BR>
 <BR>
 
 <font size="5">5.Experiment of XOR</font><BR>
-The experimental results for each pattern are shown below.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The experimental results for each pattern are shown below.<BR>
 1) Pattern1: Input1 and Input2 were “Low” (Figure5-1)<BR>
     <center>
     <img src="Mimage/実験2.png" width="50%" height="50%"><BR>
@@ -293,7 +293,7 @@ The experimental results for each pattern are shown below.<BR>
     Figure5-4 Experimental results for Pattern4
     </center>
 <BR>
-The data for Patterns1~4 are shown together in Figure5-5 below.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The data for Patterns1~4 are shown together in Figure5-5 below.<BR>
 
 <BR>
 
@@ -301,17 +301,17 @@ The data for Patterns1~4 are shown together in Figure5-5 below.<BR>
     <img src="Mimage/実験6.png" width="50%" height="50%"><BR>
     Figure5-5 Combined data for Patterns1~4
     </center>
-Pattern2 and Pattern4 exhibited different fluorescence intensities. Therefore, we could obtain the desired result. However, there were some problems with this analysis, as described below.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pattern2 and Pattern4 exhibited different fluorescence intensities. Therefore, we could obtain the desired result. However, there were some problems with this analysis, as described below.<BR>
 
 <BR>
 <strong>1) Problem 1:</strong><BR>
-The concentration difference was too small compared with the simulation results when the output was “High” and “Low”. <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The concentration difference was too small compared with the simulation results when the output was “High” and “Low”. <BR>
 <strong>2) Problem 2:</strong><BR>
-In Pattern2 and Pattern3, we could confirm that the output values were the same as the simulation result; however, the results from the actual experiment were different.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Pattern2 and Pattern3, we could confirm that the output values were the same as the simulation result; however, the results from the actual experiment were different.<BR>
 <strong>3) Problem 3:</strong><BR>
-The output value of Pattern1 was too high.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The output value of Pattern1 was too high.<BR>
 <BR>
-The causes of these problems are discussed below.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The causes of these problems are discussed below.<BR>
 <BR>
 
 <strong>1) Cause of Problem 1:</strong><BR>
@@ -320,7 +320,7 @@ Problem 1 was thought to be caused by the low concentration of each DNA; thus, t
 Problems 2 and 3 were thought to be caused by noise from the spectrofluorometer.<BR>
 <BR>
 
-Therefore, we will conduct additional experiments in an improved experimental environment, as follows:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, we will conduct additional experiments in an improved experimental environment, as follows:<BR>
 <BR>
 ・We will set each DNA concentration, except for Input1 and Input2, to twice as high as in the previous experiment in order to increase the concentration difference between “High” and “Low”. <BR>
 <BR>
