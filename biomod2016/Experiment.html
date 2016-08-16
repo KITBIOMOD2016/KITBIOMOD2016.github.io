@@ -163,7 +163,7 @@ Figure 3 : Connecting the XORgate schematic<BR>
 
 <BR>
     <center>
-    <img src="Dimages/Figure4.png" width="30%" height="30%"><BR>
+    <img src="Dimages/Figure4.png" width="40%" height="40%"><BR>
     </center>
 
 <center>Figure 4 : Simulation from Figure 3<BR></center>
@@ -177,7 +177,7 @@ Figure 5 : XORgate with the threshold gate schematic<BR>
 
 <BR>
     <center>
-    <img src="Dimages/Figure6.png" width="30%" height="30%"><BR>
+    <img src="Dimages/Figure6.png" width="40%" height="40%"><BR>
 Figure 6 : Threshold gate function<BR>
 </center>
 
@@ -218,10 +218,13 @@ Figure 6 : Threshold gate function<BR>
 <font size="5">3.Comparison of the DNA Interference Canceller with the combinational XOR circuit</font><BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As shown in Figure 8, the XOR circuit can be designed to combine the ANDgate, ORgate, and NOTgate.  
 <BR>
+<BR>
     <center>
     <img src="Dimages/Figure8.jpg" width="30%" height="30%"><BR>
 Figure 8 : Combinational XOR circuit schematic<BR>
 </center>
+
+<BR>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realization of the combinational XORgate is difficult because the complex circuits in the DNA reaction system tend to cause unwanted reactions. We compare simulations between the DNA Interference Canceller and combinational XOR to determine which exhibited a simpler design.<BR>
 <BR>
@@ -239,7 +242,6 @@ Table 1 : Complexity index of each device<BR>
     Figure 9 : Comparison of simulations
     </center>
 <BR>
-<BR>
 
     <center>
     <img src="Dimages/Figure10.png" width="50%" height="50%"><BR>
@@ -247,9 +249,8 @@ Figure 10 : Expansion of Figure 9, with the time scale changed to minutes
 </center>
 
 <BR>
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10-8 M. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We found that the output was “Low” when the graph’s value was comparatively low. Therefore, we set the threshold as 50 nM. With this threshold, the design using the DNA Interference Canceller was faster than the other design when the output was “High”. Because the threshold concentration was 50 nM, as shown in Figure 10, the output became “High” at 150 min. If we used the combinational circuit, 150 min may be a critical weak point. Our DNA Interference Canceller overcame this limitation.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10-8 M.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We found that the output was “Low” when the graph’s value was comparatively low. Therefore, we set the threshold as 50 nM. With this threshold, the design using the DNA Interference Canceller was faster than the other design when the output was “High”. Because the threshold concentration was 50 nM, as shown in Figure 10, the output became “High” at 150 min. If we used the combinational circuit, 150 min may be a critical weak point. Our DNA Interference Canceller overcame this limitation.<BR>
 <BR>
 <BR>
 
@@ -266,7 +267,6 @@ Figure 10 : Expansion of Figure 9, with the time scale changed to minutes
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We found that Makeoutput1 and Reporter did not react because the Reporter intensity was almost unchanged before adding the Verification Input. After adding the Verification Input, the Reporter intensity changed. Therefore, we progressed to the main experiment.
 <BR>
 
-<BR>
 <BR>
 
 <font size="5">5.Experiment of XOR</font><BR>
@@ -330,6 +330,7 @@ Problems 2 and 3 were thought to be caused by noise from the spectrofluorometer.
 <BR>
 As can be seen from figure 15, the output value of low-low was too high. It is caused by reaction which is not intended by us. Possible causes for the undesired reaction include: There are fraying of end each other at strands. Thereby, strands Reporter modification had been release. Future goal is redesigning base sequence for decrease the fray.<BR>
 
+<BR>
 <BR>
 <font size="5">Refference</font><BR>
 [1]Matlab:<BR>
