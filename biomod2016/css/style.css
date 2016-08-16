@@ -9,7 +9,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
  *  一般・共通設定
  ================================================*/
 body {
-	font-size:14px;
+	font-size:17px;
 	color:#333;
 	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 	line-height:1.6;
@@ -233,7 +233,7 @@ header {
 	}
 	nav li {
 		position:relative;
-		width:17%;
+		width:21%;
 		float:left;
 		margin:0;
 		padding:0;
@@ -292,16 +292,16 @@ header {
 	}
 	nav li ul li {
 		overflow:hidden;
-		width:150%;
+		width:210%;
 		height:0;
 		-moz-transition:.2s;
-		-webkit-transition:.2s;
+		-webkit-transition:2s;
 		-o-transition:.2s;
 		-ms-transition:.2s;
 		transition:.2s;
 	}
 	nav li li:first-child {
-		width:150%;
+		width:210%;
 	}
 	nav li ul li a {
 		padding:10px 15px;
@@ -332,7 +332,7 @@ header {
 	.showSub {
 		overflow:visible;
 		min-height:42px;
-		border-bottom:2px solid #0c0c8c;
+		border-bottom:6px solid #0c0c8c;
 	}
 	.showSub:last-child {
 		border-bottom:0;
