@@ -242,77 +242,79 @@ If we use the combinational circuit stopping 150 minutes is likely to be a criti
 <div id="02"><u><font size="6">Wet Experiment results</font></u></div><BR>
 
 <font size ="5">4.Verification Experiment</font><BR>
-Measurement result when we add Verification Input after 30 minutes passes since add Fluorescence and Makeoutput in a cell is shown below.<BR>
+The measurement result after adding the Verification Input at 30 min passed the detection threshold after adding Fluorescence and Makeoutput1 in the cell, as shown in Figure4-1. <BR>
 
     <center>
     <img src="Mimage/実験1.png" width="50%" height="50%"><BR>
-    Figure4-1
+    Figure4-1 Verification Experiment
     </center>
 <BR>
-
-We could know that Makeoutput1 and Fluorescence doesn’t react since fluorescence intensity almost unchanged before adding Verification Input.<BR>
-After adding Verification Input, fluorescence intensity changed. <BR>
-Therefore, we progressed to the main experiment.<BR>
+We found that Makeoutput1 and Fluorescence did not react because the fluorescence intensity was almost unchanged before adding the Verification Input. After adding the Verification Input, the fluorescence intensity changed. Therefore, we progressed to the main experiment.
 <BR>
+
 <BR>
 <BR>
 
 <font size="5">5.Experiment of XOR</font><BR>
-Measurement result of Output when inputs are (1), (2), (3) and (4) are shown below.<BR>
-
+The experimental results for each pattern are shown below.<BR>
+1) Pattern1: Input1 and Input2 were “Low” (Figure5-1)<BR>
     <center>
     <img src="Mimage/実験2.png" width="50%" height="50%"><BR>
-    Figure5-1 (1) InputA and InputB are low
+    Figure5-1 Experimental results for Pattern1
     </center>
 <BR>
+2) Pattern2: Input1 was “High” and Input2 was “Low” (Figure5-2)
     <center>
     <img src="Mimage/実験3.png" width="50%" height="50%"><BR>
-    Figure5-2 (2) InputA is high and InputB is low
+    Figure5-2 Experimental results for Pattern2
     </center>
 <BR>
+3) Pattern3: Input1 was “Low” and Input2 was “High” (Figure5-3)
     <center>
     <img src="Mimage/実験4.png" width="50%" height="50%"><BR>
-    Figure5-3 (3) InputA is low and InputB is high
+    Figure5-3 Experimental results for Pattern3
     </center>
 <BR>
+4) Pattern4: Input1 and Input2 were “High” (Figure5-4)
     <center>
     <img src="Mimage/実験5.png" width="50%" height="50%"><BR>
-    Figure5-4 (4) InputA and InputB are high
+    Figure5-4 Experimental results for Pattern4
     </center>
 <BR>
-<BR>
+The data for Patterns1~4 are shown together in Figure5-5 below.<BR>
 
-Put the data from (1)~(4) together is shown below.<BR>
+<BR>
 
     <center>
     <img src="Mimage/実験6.png" width="50%" height="50%"><BR>
-    Figure5-5 (1)~(4) together
+    Figure5-5 Combined data for Patterns1~4
     </center>
+Pattern2 and Pattern4 exhibited different fluorescence intensities. Therefore, we could obtain the desired result. However, there were some problems with this analysis, as described below.<BR>
+
+<BR>
+<strong>1) Problem 1:</strong><BR>
+The concentration difference was too small compared with the simulation results when the output was “High” and “Low”. <BR>
+<strong>2) Problem 2:</strong><BR>
+In Pattern2 and Pattern3, we could confirm that the output values were the same as the simulation result; however, the results from the actual experiment were different.<BR>
+<strong>3) Problem 3:</strong><BR>
+The output value of Pattern1 was too high.<BR>
+<BR>
+The causes of these problems are discussed below.<BR>
 <BR>
 
-There is diffrence in fluorescence intensity between pattern2 and pattern4.<BR>
-confirm that fluorescence intensity of between pattern (4) and (2) are difference.<BR>
-Therefore, we could obtain desired result. However, there are some problems as below.<BR>
-<BR>
-<strong>Problem 1</strong><BR>
-The concentration difference when output value is High and is Low in is too small compared simulation result.<BR>
-<strong>Problem 2</strong><BR>
-We could confirm the output value when (2) and (3) are same from simulation result, but they are different in the experiment result.<BR>
-<strong>Problem 3</strong><BR>
-The output value is too big when the pattern of experiment is (1)<BR>
+<strong>1) Cause of Problem 1:</strong><BR>
+Problem 1 was thought to be caused by the low concentration of each DNA; thus, the concentration difference between “High” and “Low” was small.<BR>
+<strong>2) Cause of Problems 2 and 3</strong><BR>
+Problems 2 and 3 were thought to be caused by noise from the spectrofluorometer.<BR>
 <BR>
 
-We considered causes of problems are as below.<BR>
-<strong>Cause of problem1</strong><BR>
-Due to concentration of each DNA is thin, wherefore concentration difference between High and Low is small.<BR>
-<strong>Cause of problem2 and problem3</strong><BR>
-Due to noise is arisen when we used spectrofluorometer.<BR>
+Therefore, we will conduct additional experiments in an improved experimental environment, as follows:<BR>
 <BR>
-
-
-Therefore, we conducted experiment again in improved experiment environment as below.<BR>
-・We set each DNA except for InputA and InputB twice concentration as much as before experiment in order to increase the concentration difference between High and Low. <BR>
-・We adjusted sensitivity of spectrofluorometer to reduce influence by noise. In particular, we changed sensitivity from 370V to 270V.<BR>
+・We will set each DNA concentration, except for Input1 and Input2, to twice as high as in the previous experiment in order to increase the concentration difference between “High” and “Low”. <BR>
+<BR>
+・We will adjust the sensitivity of the spectrofluorometer to reduce the influence of noise. <BR>
+<BR>
+As can be seen from figure17, the output value of low-low was too high. It is caused by reaction which is not intended by us. Possible causes for the undesired reaction include: There are fraying of end each other at strands. Thereby, strands fluorescence modification had been release. Future goal is redesigning base sequence for decrease the fray.<BR>
 
 		</div><!-- /.staff -->
 	</div><!-- /#main -->
