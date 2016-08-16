@@ -99,50 +99,55 @@ Jump to Wet Experiment
 <BR>
 <BR>
 <div id="01"><u><font size="6">Dry Experiment</font></u></div>
+We simulated the output concentration of the DNA Interference Canceller using numerical software (Matlab); the performance and refinement are described herein. The threshold concentration was defined as 50 nM, where “High” > 50 nM and “Low” < 50 nM. We conducted four types of simulations: Pattern1, Input1 and Input2 were “Low”; Pattern2, Input1 was “High” and Input2 was “Low”; Pattern3, Input1 was “Low” and Input2 was “High”; and Pattern4, Input1 and Input2 were “High”. In addition, we set the initial input concentration at 100 nM (High) or 5 nM (Low).<BR>
 <BR>
-We simulate Output concentration of DNA Conductor by numerical software (Matlab) and describe a performance and a refinement in this page.<BR>
-Further, Let Threshold concentration be defined as 50nM, where High>50nM, and Low<50nM.<BR>
 <BR>
 
-<font size="5">1.Confirmation of DNA Conductor’s Output concentration</font><BR>
-When Input1 and Input2 add DNA Conductor, we simulate Output concentration.<BR>
-We set initial Input concentration at 100nM(High) or 5nM(Low). <BR>
-Figure1-2 shows DNA Conductor’s Output when Input1-Input2 concentration is High-High, High-Low, Low-High, Low-Low respectively.<BR>
+<font size="5">1.Confirmation of the output concentration for the DNA Interference Canceller</font><BR>
+When Input1 and Input2 were added to the DNA Interference Canceller, we simulated the output concentration. Figure 1 shows XORgate schematic and Figure 2 shows the four simulation patterns.<BR>
 <BR>
     <center>
     <img src="Dimages/Figure1.1.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure1-1: XORgate schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure 1: XORgate schematic<BR>
 
 <BR>
     <center>
+    All patterns<BR>
     <img src="Dimages/Figure1.2all.png" width="40%" height="30%"><BR>
     </center>
 
 <BR>
 <table style="border-style: none;" border="1">
 <TR>
-<TD style="border-style: none;"><img src="Dimages/Figure1.2high-high.png" width="75%" height="65%" alt="" align="center"></TD>
-<TD style="border-style: none;"><img src="Dimages/Figure1.2low-low.png" width="75%" height="65%" alt="" align="center"></TD>
+<TD style="border-style: none;">
+<center>Pattern1<BR>
+<img src="Dimages/Figure1.2high-high.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
+<TD style="border-style: none;">
+<center>Pattern2<BR>
+<img src="Dimages/Figure1.2low-low.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
 </TR>
 <TR>
-<TD style="border-style: none;"><img src="Dimages/Figure1.2high-low.png" width="75%" height="65%" alt="" align="center"></TD>
-<TD style="border-style: none"><img src="Dimages/Figure1.2low-high.png" width="75%" height="65%" alt="" align="center"></TD>
+<TD style="border-style: none;">
+<center>Pattern3<BR>
+<img src="Dimages/Figure1.2high-low.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
+<TD style="border-style: none;">
+<center>Pattern4<BR>
+<img src="Dimages/Figure1.2low-high.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
 </TR>
 </table>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure1-2: Output of XORgate<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure 2: Output of the XORgate<BR>
 
 <BR>
 <BR>
 
-<font size="5">2.Introduction of Threshold gate</font><BR>
-<BR>
-Through DNA Conductor’s simulation in chapter1, Output concentration proved nearly equal to Input1 + Input2, if Input1-Input2 concentration is Low-Low.<BR>
-For this reason, connecting DNA Conductors as shown in Figure2-1, Output Concentration gradually increase and will be High despite Input1-Input2 is Low-Low(Figure2-2). <BR>
-Solving this problem, we attach Threshold gate to DNA Conductor.<BR>
-Figure2-4 shows Threshold gate working which divide Input concentration High or Low as a border Threshold concentration.<BR>
-If Input concentration is Low after passing Threshold gate, the concentration will be 0.5nM. For this reason, Output of DNA Conductor which attach Threshold gate will be never high, if Input1-Input2 is Low-Low.<BR>
+<font size="5">2.Introduction of the threshold gate</font><BR>
+Through simulation with the DNA Interference Canceller, as described in section 1, when Input1 was “Low” and Input2 was “Low”, the output concentration was nearly equal to Input1 plus Input2. For this reason, connecting the DNA Interference Canceller as shown in Figure 3, the output concentration gradually increased and would be “High”, despite that both inputs were “Low” (Figure 4). In order to overcome this problem, we attached a threshold gate to the DNA Interference Canceller(Figure 5). Figure 6 shows the function of the threshold gate, which divided the input concentration into “High” or “Low” as a border threshold concentration. If the input concentration was “Low” after passing the threshold gate, the output concentration would be 0.5 nM. For this reason, the output of the DNA Interference Canceller attached to the threshold gate would not ever “High”, when both Input1 and Input2 were “Low”. Figure 7 shows the simulation of the DNA Interference Canceller with the threshold gate. <BR>
 <BR>
 
 <BR>
@@ -150,95 +155,102 @@ If Input concentration is Low after passing Threshold gate, the concentration wi
     <img src="Dimages/Figure2.1.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　Figure2-1:Connecting XORgate schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　Figure 3:Connecting the XORgate schematic<BR>
 
 <BR>
     <center>
     <img src="Dimages/Figure2.2.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　 　　Figure2-2:Simulation of Figure2-1<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　 　　Figure 4:Simulation from Figure2-1<BR>
 
 <BR>
     <center>
     <img src="Dimages/Figure2.3.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　Figure2-3:Introducing Thresholdgate schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　Figure 5:XORgate with the threshold gate schematic<BR>
 
 <BR>
     <center>
     <img src="Dimages/Figure2.4.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure2-4:Thresholdgate function<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure 6:Threshold gate function<BR>
 
 <BR>
+
 <BR>
     <center>
+    All patterns<BR>
     <img src="Dimages/Figure2.5 all.png" width="40%" height="30%"><BR>
     </center>
 
 <BR>
 <table style="border-style: none;" border="1">
 <TR>
-<TD style="border-style: none;"><img src="Dimages/Figure2.5 high-high.png" width="75%" height="65%" alt="" align="center"></TD>
-<TD style="border-style: none;"><img src="Dimages/Figure2.5 low-low.png" width="75%" height="65%" alt="" align="center"></TD>
+<TD style="border-style: none;">
+<center>Pattern1<BR>
+<img src="Dimages/Figure2.5 low-low.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
+<TD style="border-style: none;">
+<center>Pattern2<BR>
+<img src="Dimages/Figure2.5 high-low.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
 </TR>
 <TR>
-<TD style="border-style: none;"><img src="Dimages/Figure2.5 high-low.png" width="75%" height="65%" alt="" align="center"></TD>
-<TD style="border-style: none"><img src="Dimages/Figure2.5 low-high.png" width="75%" height="65%" alt="" align="center"></TD>
+<TD style="border-style: none;">
+<center>Pattern3<BR>
+<img src="Dimages/Figure2.5 low-high.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
+<TD style="border-style: none;">
+<center>Pattern4<BR>
+<img src="Dimages/Figure2.5 low-low.png" width="75%" height="65%" alt="" align="center">
+</center></TD>
 </TR>
 </table>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure2-5: Output of XORgate<BR>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure 7: Output of XORgate<BR>
 <BR>
-<font size="5">3. Comparison of DNA Conductor with Combinational xor circuit</font><BR>
-As shown in Figure3-1, xor circuit can be designed to combine AND gate, OR gate, and NOTgate.<BR>
+<font size="5">3.Comparison of the DNA Interference Canceller with the combinational XOR circuit</font><BR>
+As shown in Figure 8, the XOR circuit can be designed to combine the ANDgate, ORgate, and NOTgate.  
 <BR>
     <center>
     <img src="Dimages/Figure3.1.png" width="30%" height="30%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　Figure3-1:Combinational xor circuit schematic<BR>
+　　　　　　　　　　　　　　　　　　　　　　　　Figure 8: Combinational XOR circuit schematic<BR>
+Realization of the combinational XORgate is difficult because the complex circuits in the DNA reaction system tend to cause unwanted reactions. We compare simulations between the DNA Interference Canceller and combinational XOR to determine which exhibited a simpler design.<BR>
 <BR>
-The realization of combinational XOR gate is difficult.<BR>
-The reason is that complex circuits in DNA reaction system tend to cause the reaction which we don’t hope to cause.<BR>
-We compare simulation between DNA Interference Canceller and combinational XOR to conclude which is simpler design.<BR>
-<BR>
-　　　　　　　　　　　　　　　　　　　　　　　　　Table3-1:Each device of complexity index
+　　　　　　　　　　　　　　　　　　　　　　　　　Table 1:Complexity index of each device
     <center>
     <img src="Dimages/Table3.2.png" width="50%" height="50%"><BR>
     </center>
 
 <BR>
-Table3-1 shows the design using DNA interference detection is simpler because each number is lower. <BR>
-Next, we compare simulation.<BR>
+Table 1 shows that the design using the DNA Interference Canceller was simpler because each number was lower. Thus, we then compared simulations using both approaches.<BR>
 <BR>
 
     <center>
     <img src="Dimages/Figure3.3.png" width="50%" height="50%"><BR>
     </center>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure3-3 Each simulation
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Figure 9: Comparison of simulations
 <BR>
 <BR>
 
     <center>
     <img src="Dimages/Figure3.4.png" width="50%" height="50%"><BR>
-    </center>
+Figure 10: Expansion of Figure 9, with the time scale changed to minutes
+</center>
 
-　　　　　　　　　　　　　　　　　　　　Figure3-4: Expansion of Figure1, it change timescale to minutes
+<BR>
+<BR>
+The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10-8 M. 
+We found that the output was “Low” when the graph’s value was comparatively low. Therefore, we set the threshold as 50 nM. With this threshold, the design using the DNA Interference Canceller was faster than the other design when the output was “High”. Because the threshold concentration was 50 nM, as shown in Figure 10, the output became “High” at 150 min. If we used the combinational circuit, 150 min may be a critical weak point. Our DNA Interference Canceller overcame this limitation.
 <BR>
 <BR>
 
-These graphs are High-Low Output. <BR>
-Because Low-Low Output’s concentration is less than 10^(-8),<BR>
-We can recognize Output is low when graph’s value is comparatively low.<BR>
-So, we set the Threshold as 50nM. Therefore, the design using DNA Conductor is faster than the other in the time when we recognize the Output is High.<BR>
-Because Threshold is 50nM, from Figure2, it is 150 minutes that the difference of time when Output becomes high.<BR>
-If we use the combinational circuit stopping 150 minutes is likely to be a critical weak point.  Our DNA conductor solved the weak point.<BR>
-<BR>
-<BR>
 <div id="02"><u><font size="6">Wet Experiment results</font></u></div><BR>
 
 <font size ="5">4.Verification Experiment</font><BR>
