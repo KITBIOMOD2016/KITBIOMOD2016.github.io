@@ -153,33 +153,37 @@ Figure 2 : Outputs of the XORgate<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through simulation with the DNA Interference Canceller, as described in section 1, when Input1 was “Low” and Input2 was “Low”, the output concentration was nearly equal to Input1 plus Input2. For this reason, connecting the DNA Interference Canceller as shown in Figure 3, the output concentration gradually increased and would be “High”, despite that both inputs were “Low” (Figure 4). In order to overcome this problem, we attached a threshold gate to the DNA Interference Canceller(Figure 5). Figure 6 shows the function of the threshold gate, which divided the input concentration into “High” or “Low” as a border threshold concentration. If the input concentration was “Low” after passing the threshold gate, the output concentration would be 0.5 nM. For this reason, the output of the DNA Interference Canceller attached to the threshold gate would not ever “High”, when both Input1 and Input2 were “Low”. Figure 7 shows the simulation of the DNA Interference Canceller with the threshold gate. <BR>
 <BR>
 
-<BR>
-    <center>
-    <img src="Dimages/Figure3.png" width="30%" height="30%"><BR>
+<table>
+<TR>
+<TD>
+<center>
+<img src="Dimages/Figure3.png" width="90%" height="110%"><BR>
     </center>
 <center>
 Figure 3 : Connecting the XORgate schematic<BR>
 </center>
-
-<BR>
+</TD>
+<TD>
     <center>
-    <img src="Dimages/Figure4.png" width="40%" height="40%"><BR>
+    <img src="Dimages/Figure4.png" width="70%" height="70%"><BR>
     </center>
+<center>Figure 4 : Simulation from Figure 3<BR></center></TD>
+</TR>
 
-<center>Figure 4 : Simulation from Figure 3<BR></center>
-
-<BR>
+<TR>
+<TD>
     <center>
-    <img src="Dimages/Figure5.jpg" width="30%" height="30%"><BR>
-
+    <img src="Dimages/Figure5.jpg" width="90%" height="150%"><BR>
 Figure 5 : XORgate with the threshold gate schematic<BR>
-</center>
+</center></TD>
 
-<BR>
+<TD>
     <center>
-    <img src="Dimages/Figure6.png" width="40%" height="40%"><BR>
+    <img src="Dimages/Figure6.png" width="70%" height="70%"><BR>
 Figure 6 : Threshold gate function<BR>
-</center>
+</center></TD>
+</TR>
+</table>
 
 <BR>
 
@@ -249,7 +253,7 @@ Figure 10 : Expansion of Figure 9, with the time scale changed to minutes
 </center>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10-8 M.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The graphs above show High-Low outputs because the concentration for the Low-Low output was less than 10<span class="example1"><font size="1">-8</font></span> M.<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We found that the output was “Low” when the graph’s value was comparatively low. Therefore, we set the threshold as 50 nM. With this threshold, the design using the DNA Interference Canceller was faster than the other design when the output was “High”. Because the threshold concentration was 50 nM, as shown in Figure 10, the output became “High” at 150 min. If we used the combinational circuit, 150 min may be a critical weak point. Our DNA Interference Canceller overcame this limitation.<BR>
 <BR>
 <BR>
@@ -329,6 +333,47 @@ Problems 2 and 3 were thought to be caused by noise from the spectrofluorometer.
 ・We will adjust the sensitivity of the spectrofluorometer to reduce the influence of noise. <BR>
 <BR>
 As can be seen from figure 15, the output value of low-low was too high. It is caused by reaction which is not intended by us. Possible causes for the undesired reaction include: There are fraying of end each other at strands. Thereby, strands Reporter modification had been release. Future goal is redesigning base sequence for decrease the fray.<BR>
+<BR>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We considered the each Makecutter and Reporter may react, since they have same domain “ss3”. Due to fraying the ends of double strands in Reporter, the domain ss3 of each Makecutter can react to Reporter, then the strand having fluorescence molecule is released as Figure 16.<BR>
+<BR>
+
+    <center>
+    <img src="Mimage/Figure16.png" width="50%" height="50%"><BR>
+    Figure 16: The reaction of each Makecutter and Reporter due to fraying the ends of double strands in Reporter<BR>
+    </center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We performed further experiment to check whether our discussion is correct or not. One experiment is adding Makecutter1 and Reporter together, and the other is adding Makeoutput1 and Reporter together in a cell. If fraying the ends of double strands doesn’t occur, fluorescence intensity doesn’t change in a few hours.<BR>
+<BR>
+
+<center>
+    <img src="Mimage/検証2.png" width="50%" height="50%"><BR>
+   Figure 17: The experimental result of Makecutter1 and Reporter<BR>
+    </center>
+<BR>
+
+<center>
+    <img src="Mimage/検証1.png" width="50%" height="50%"><BR>
+  Figure 18: The experimental result of Makeoutput1 and Reporter<BR>
+    </center>
+<BR>
+
+<center>
+    <img src="Mimage/検証3.png" width="50%" height="50%"><BR>
+  Figure 19: Zero adjust Figure 17 and Figure 18<BR>
+    </center>
+<BR>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Figure 17 and Figure 18 are experimental result when Makecutter1 and Reporter are added, and Makeoutput1 and Reporter are added in a cell. We can confirm the strand having fluorescence molecule is released in Figure 17, since fluorescence intensity is changed in 3 hours. Compared to that, we can confirm the strand having fluorescence molecule isn’t released in Figure 18, since fluorescence intensity isn’t changed. These figures suggest that abnormality of the experimental value due to reaction of Makecutter1 and Reporter.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the above, we concluded that undesired reactions occur by fraying the ends of double strands. Therefore we will have to redesign DNA sequence to decrease fray. For example, we will redesign Reporter like Figure 20 not to release the strand having fluorescence molecule when react to other domain. <BR>
+
+<center>
+    <img src="Mimage/Figure20.png" width="50%" height="50%"><BR>
+ Figure 20 Redesigned Reporter<BR>
+    </center>
+<BR>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition, we will try to design sequence having C-G bonds at ends of double strands to decrease the rate of fraying, and add “clamp” domains to decrease undesired reactions. <BR>
 
 <BR>
 <BR>

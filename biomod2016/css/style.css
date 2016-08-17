@@ -56,6 +56,8 @@ nav:after {
 	padding-bottom:32768px;
 }
 
+span.example1 { vertical-align: super; }
+
 #sub {
 	box-sizing:border-box;
 	overflow:hidden;
