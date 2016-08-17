@@ -114,7 +114,15 @@ Jump to Output confirmation
 
 <font size="6"><u>Materials & Methods</u></font><BR>
 <BR>
-<div id="01"><font size="5">1.Type of strands</font><BR></div>
+<div id="01"><font size="5">1.Simulation Condition</font><BR></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We set the rate constant based on toehold length as follows [1,2]. 
+<BR>
+<BR>
+ <div align="left">
+    <img src="Mimage/rate constant.png" width="65%" height="65%"><BR>
+    </div>
+<BR>
+<div id="02"><font size="5">2.Type of strands</font><BR></div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We designed the strands shown in Figures 1~6.<BR>
 <BR>
 
@@ -161,7 +169,7 @@ Jump to Output confirmation
     </center>
     <BR>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, we designed DNA sequences by visual DSD[1] and NUPACK[2]. The DNA sequences are shown below in Table 1. Visual DSD is a software which simulates and analyzes DNA strand displacement reactions, and can be utilized as a programing language for a computer-aided design of DNA circuits. On the other hand, NUPACK can design the DNA sequences, and evaluate their secondary structures at a room temperature.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, we designed DNA sequences by visual DSD[3] and NUPACK[4]. The DNA sequences are shown below in Table 1. Visual DSD is a software which simulates and analyzes DNA strand displacement reactions, and can be utilized as a programing language for a computer-aided design of DNA circuits. On the other hand, NUPACK can design the DNA sequences, and evaluate their secondary structures at a room temperature.
 <BR>
 
    <BR>
@@ -202,7 +210,7 @@ Jump to Output confirmation
 <BR>
 <BR>
 
-<div id="02"><font size="5">2.Verification experiment</font></div>
+<div id="03"><font size="5">3.Verification experiment</font></div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, we examined whether Makeoutput and Reporter may react because they have complementary sequences TTT1 and TTT1*. If they did react, the output would not be released as desired (Figure 10). <BR>
 <BR>
     <BR>
@@ -267,7 +275,7 @@ Figure 11 : Makeoutput1, Reporter, and Verification inputs<BR>
 <BR>
 <BR>
 
-<div id="03"><font size="5">3.Wet Experiment of DNA Interference Canceller</font></div>
+<div id="04"><font size="5">4.Wet Experiment of DNA Interference Canceller</font></div>
 <font size="4"><strong>Step.2-1 Dilute</strong></font><BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We diluted each strand until reaching the desired concentration, as shown in Table 4 below. The experiment was performed at 20°C in Tris-EDTA buffer supplemented with 12.5 mM MgCl2.<BR>
 <BR>
@@ -316,7 +324,7 @@ Figure 11 : Makeoutput1, Reporter, and Verification inputs<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We measured the Reporter intensity using a spectrofluoremeter (FP-8300; JASCO) for 10 h with 5-min intervals.<BR>
 <BR>
 
-<div id="04"><font size="5">4.Output confirmation</font></div>
+<div id="05"><font size="5">4.Output confirmation</font></div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We applied FRET to confirm how much output was released. Before the output reacted with Reporter, the FAM did not fluoresce since the Reporter of FAM was absorbed by BHQ1. When output reacted with Reporter, the Reporter of FAM became detectable because the distance between the FAM and BHQ1 molecules increased (Figure 17).<BR>
 <BR><BR>
     <center>
@@ -328,9 +336,12 @@ Figure 11 : Makeoutput1, Reporter, and Verification inputs<BR>
 <BR>
 <BR>
 <font size="5">Refference</font><BR>
-[1]Programming DNA circuit (Visual DSD):<BR>
+[1] D. Zhan and E. Winfree: Control of DNA Strand Displacement Kinetics using Toehold Exchange,<I>J. Am. Chem. Soc,</I> Vol. 131, pp. 17303-17314, 2009.<BR>
+[2] S. Kobayashi, K. Yanagibashi, K. Fujimoto, K. Komiya and M. Hagiya:<BR>
+Analog DNA Computing Devices Toward the Control of Molecular Robots, <I>Workshop on Self-organization in Swarm of Robots: from Molecular Robots to Mobile Agents (WSSR 2014),</I> Nara, Octorber, 2014.<BR>
+[3]Programming DNA circuit (Visual DSD):<BR>
 https://www.microsoft.com/en-us/research/project/programming-dna-circuits/<BR>
-[2]Nupack: <BR>
+[4]Nupack: <BR>
 http://www.nupack.org<BR>
 
 
