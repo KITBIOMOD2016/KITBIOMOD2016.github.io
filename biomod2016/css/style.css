@@ -18,14 +18,14 @@ body {
 
 .inner{
 	position:relative;
-	width:980px;
+	width:1000px;
 	margin:0 auto;
 }
 
 header {
 	box-sizing:border-box;
 	position:relative;
-	width:100%;
+        left:300px;
 	background:#fcfcfc;
 }
 
